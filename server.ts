@@ -1,13 +1,13 @@
 import express, { Request, Response } from 'express';
-import cors from 'cors';
+// import cors from 'cors';
 
 import { apiRouter } from './serverComponents/api';
 
 const app = express();
 
-app.use(cors({
-  origin: '*'
-}));
+// app.use(cors({
+//   origin: '*'
+// }));
 app.use(express.json());
 app.use('/api', apiRouter);
 
