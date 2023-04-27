@@ -9,7 +9,7 @@ app.use(cors());
 app.use(express.json());
 app.use('/api', apiRouter);
 
-const PORT = 8088;
+const PORT = process.env.PORT || 8088
 app.listen(PORT, () =>
 {
   console.log(`Server started on port ${PORT}`);
