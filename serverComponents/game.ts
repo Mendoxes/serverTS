@@ -20,7 +20,7 @@ export const createGame = async (req: bodyInterface, res: responseJsonInterface)
 
   for (let i = 0; i < numHands; i++)
   {
-    playerHands.push(dealCards(deck, 1));
+    playerHands.push(dealCards(deck, 2));
     playerScores.push(calculateHandScore(playerHands[i]));
   }
 
